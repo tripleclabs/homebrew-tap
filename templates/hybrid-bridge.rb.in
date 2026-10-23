@@ -16,7 +16,7 @@ class {{CLASS}} < Formula
     end
   end
 
-  conflicts_with {{CONFLICT}}, because: "both install the hybrid-bridge command"
+{{CONFLICT_DECLARATION}}
 
   def install
     bin.install Dir["hybrid-bridge-darwin-*"].fetch(0) => "hybrid-bridge"

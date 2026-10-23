@@ -16,7 +16,7 @@ class {{CLASS}} < Formula
     end
   end
 
-  conflicts_with {{CONFLICT}}, because: "both install the cococo command"
+{{CONFLICT_DECLARATION}}
 
   resource "third-party-notices" do
     url {{NOTICES_URL}}

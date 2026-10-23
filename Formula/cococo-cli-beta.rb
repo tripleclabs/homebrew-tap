@@ -16,7 +16,6 @@ class CococoCliBeta < Formula
     end
   end
 
-  conflicts_with "cococo-cli", because: "both install the cococo command"
 
   resource "third-party-notices" do
     url "https://raw.githubusercontent.com/tripleclabs/homebrew-tap/main/notices/cococo-0.1.0-beta.7.txt"
