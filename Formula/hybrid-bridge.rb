@@ -16,7 +16,6 @@ class HybridBridge < Formula
     end
   end
 
-
   def install
     bin.install Dir["hybrid-bridge-darwin-*"].fetch(0) => "hybrid-bridge"
     (libexec/"start-service").write <<~SH

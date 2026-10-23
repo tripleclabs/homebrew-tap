@@ -36,7 +36,8 @@ def render(catalog):
                 if urlparse(a['url']).scheme!='https' or not re.fullmatch('[0-9a-f]{64}',a['sha256']):raise ValueError('invalid artifact')
                 values[key+'_URL']=quoted(a['url']);values[key+'_SHA']=quoted(a['sha256'])
             template=(ROOT/'templates'/f'{stem}.rb.in').read_text()
-            result[formula+'.rb']=re.sub(r'\{\{([A-Z0-9_]+)\}\}',lambda m:values[m[1]],template).replace('\n\n\n','\n\n')
+            rendered=re.sub(r'\{\{([A-Z0-9_]+)\}\}',lambda m:values[m[1]],template)
+            result[formula+'.rb']=re.sub(r'\n{3,}', '\n\n', rendered)
     return result
 
 
