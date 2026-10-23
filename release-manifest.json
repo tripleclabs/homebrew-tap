@@ -1,107 +1,112 @@
 {
-  "schema": 1,
-  "updated": "2026-10-23",
-  "repository": "https://install.tripleclabs.de/apt/",
   "guide": {
-    "steiger": "stable",
+    "cococo-cli": "beta",
     "hybrid-bridge": "stable",
     "hybrid-bridge-windows": "beta",
-    "cococo-cli": "beta"
+    "steiger": "stable"
   },
   "products": {
-    "steiger": {
-      "stable": {
-        "version": "1.0.4",
-        "base_url": "https://install.tripleclabs.de/steiger/1.0.4",
-        "checksums_url": "https://install.tripleclabs.de/steiger/1.0.4/checksums.txt",
+    "cococo-cli": {
+      "beta": {
         "artifacts": {
-          "windows-msi": {
-            "url": "https://install.tripleclabs.de/steiger/1.0.4/SteigerAgent-1.0.4-x64.msi",
-            "sha256": "85eca947de7072d6e8a3981eb9e2491a5b315794528ad89e491b3830ebc95d5a"
+          "darwin-amd64": {
+            "sha256": "6f3831b8261f8ad926078350768af69312c6be01ac567e91e34d72171addda26",
+            "url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.7/cococo-darwin-amd64"
+          },
+          "darwin-arm64": {
+            "sha256": "c18c9b3bb055d4dc5b80bfe4ba133e7566c7c5678171bbea0850ca31850a16fa",
+            "url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.7/cococo-darwin-arm64"
           },
           "linux-amd64": {
-            "url": "https://install.tripleclabs.de/steiger/1.0.4/steiger-1.0.4-linux-amd64.tar.gz",
-            "sha256": "a171243aeccdd2b114c5d8f68afcbb35ddc3fab797d4ed9a1acfda5b151bd0f3"
+            "sha256": "d98969a0f48bb785282d36df34e98337150328e66edee5d93c2efea6fdfdc7a0",
+            "url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.7/cococo-linux-amd64"
           },
           "linux-arm64": {
-            "url": "https://install.tripleclabs.de/steiger/1.0.4/steiger-1.0.4-linux-arm64.tar.gz",
-            "sha256": "45461c7ef50dbc6518ecabcb6e879aaa8fc8a2c6928bd99f7e6058686d7b5c49"
+            "sha256": "7f8bd478b10c327b89f664dd3247990a06d8098c24e1b58f958274bad6ee3d6f",
+            "url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.7/cococo-linux-arm64"
+          },
+          "notices": {
+            "sha256": "8473f80620262ccb61727bbac5bf14710f2de94a7d5838acf764c30fc461ff87",
+            "url": "https://raw.githubusercontent.com/tripleclabs/homebrew-tap/main/notices/cococo-0.1.0-beta.7.txt"
+          },
+          "windows-msi": {
+            "sha256": "11a3f67c0c867823d40bedf19525c57d8668a2c617a59dd9c1d2ba60e8227085",
+            "url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.7/cococo-windows-amd64.msi"
           }
         },
-        "deb_revision": 1
+        "base_url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.7",
+        "checksums_url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.7/checksums.txt",
+        "deb_revision": 2,
+        "version": "0.1.0-beta.7"
       }
     },
     "hybrid-bridge": {
-      "stable": {
-        "version": "2.1.0",
-        "base_url": "https://install.tripleclabs.de/controller/v2.1.0",
-        "checksums_url": "https://install.tripleclabs.de/controller/v2.1.0/checksums.txt",
-        "artifacts": {
-          "linux-amd64": {
-            "url": "https://install.tripleclabs.de/controller/v2.1.0/hybrid-bridge-linux-amd64",
-            "sha256": "19b59b37b4c7d44b1ab7516ca2a5fe6aa51cade02a2d60f41b07294c2e7b8e5f"
-          },
-          "linux-arm64": {
-            "url": "https://install.tripleclabs.de/controller/v2.1.0/hybrid-bridge-linux-arm64",
-            "sha256": "4d943eb29e23c1b72554f4009b34f1f79acabf3d45ed1565aa0a8a444bf3c4af"
-          },
-          "darwin-amd64": {
-            "url": "https://install.tripleclabs.de/controller/v2.1.0/hybrid-bridge-darwin-amd64",
-            "sha256": "17450c5f0bbf798d6799c8c66284f389fcd33f69f48ca349dd081e27858a86fd"
-          },
-          "darwin-arm64": {
-            "url": "https://install.tripleclabs.de/controller/v2.1.0/hybrid-bridge-darwin-arm64",
-            "sha256": "de5018f0a6f8132016f69c72a13a362c07eba910e103c8bef116708f1506e872"
-          }
-        },
-        "deb_revision": 1
-      },
       "beta": {
-        "version": "2.1.1-beta.1",
-        "base_url": "https://github.com/tripleclabs/hybrid-bridge/releases/download/v2.1.1-beta.1",
-        "checksums_url": "https://github.com/tripleclabs/hybrid-bridge/releases/download/v2.1.1-beta.1/checksums.txt",
         "access_note": "GitHub sign-in and repository access are required for this test release; ask your CoCoCo contact if you cannot open it.",
         "artifacts": {
           "windows-msi": {
-            "url": "https://github.com/tripleclabs/hybrid-bridge/releases/download/v2.1.1-beta.1/HybridBridge-2.1.1-beta.1-x64.msi",
-            "sha256": "9e793ffa9342c887971cb22acbdc6888d7d4ad2c7bcd9fa38d7b87c09033ab19"
-          }
-        }
-      }
-    },
-    "cococo-cli": {
-      "beta": {
-        "version": "0.1.0-beta.7",
-        "base_url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.7",
-        "checksums_url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.7/checksums.txt",
-        "artifacts": {
-          "linux-amd64": {
-            "url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.7/cococo-linux-amd64",
-            "sha256": "d98969a0f48bb785282d36df34e98337150328e66edee5d93c2efea6fdfdc7a0"
-          },
-          "linux-arm64": {
-            "url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.7/cococo-linux-arm64",
-            "sha256": "7f8bd478b10c327b89f664dd3247990a06d8098c24e1b58f958274bad6ee3d6f"
-          },
-          "darwin-amd64": {
-            "url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.7/cococo-darwin-amd64",
-            "sha256": "6f3831b8261f8ad926078350768af69312c6be01ac567e91e34d72171addda26"
-          },
-          "darwin-arm64": {
-            "url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.7/cococo-darwin-arm64",
-            "sha256": "c18c9b3bb055d4dc5b80bfe4ba133e7566c7c5678171bbea0850ca31850a16fa"
-          },
-          "windows-msi": {
-            "url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.7/cococo-windows-amd64.msi",
-            "sha256": "11a3f67c0c867823d40bedf19525c57d8668a2c617a59dd9c1d2ba60e8227085"
-          },
-          "notices": {
-            "url": "https://raw.githubusercontent.com/tripleclabs/homebrew-tap/main/notices/cococo-0.1.0-beta.7.txt",
-            "sha256": "8473f80620262ccb61727bbac5bf14710f2de94a7d5838acf764c30fc461ff87"
+            "sha256": "9e793ffa9342c887971cb22acbdc6888d7d4ad2c7bcd9fa38d7b87c09033ab19",
+            "url": "https://github.com/tripleclabs/hybrid-bridge/releases/download/v2.1.1-beta.1/HybridBridge-2.1.1-beta.1-x64.msi"
           }
         },
-        "deb_revision": 2
+        "base_url": "https://github.com/tripleclabs/hybrid-bridge/releases/download/v2.1.1-beta.1",
+        "checksums_url": "https://github.com/tripleclabs/hybrid-bridge/releases/download/v2.1.1-beta.1/checksums.txt",
+        "version": "2.1.1-beta.1"
+      },
+      "stable": {
+        "artifacts": {
+          "darwin-amd64": {
+            "sha256": "17450c5f0bbf798d6799c8c66284f389fcd33f69f48ca349dd081e27858a86fd",
+            "url": "https://install.tripleclabs.de/controller/v2.1.0/hybrid-bridge-darwin-amd64"
+          },
+          "darwin-arm64": {
+            "sha256": "de5018f0a6f8132016f69c72a13a362c07eba910e103c8bef116708f1506e872",
+            "url": "https://install.tripleclabs.de/controller/v2.1.0/hybrid-bridge-darwin-arm64"
+          },
+          "linux-amd64": {
+            "sha256": "19b59b37b4c7d44b1ab7516ca2a5fe6aa51cade02a2d60f41b07294c2e7b8e5f",
+            "url": "https://install.tripleclabs.de/controller/v2.1.0/hybrid-bridge-linux-amd64"
+          },
+          "linux-arm64": {
+            "sha256": "4d943eb29e23c1b72554f4009b34f1f79acabf3d45ed1565aa0a8a444bf3c4af",
+            "url": "https://install.tripleclabs.de/controller/v2.1.0/hybrid-bridge-linux-arm64"
+          }
+        },
+        "base_url": "https://install.tripleclabs.de/controller/v2.1.0",
+        "checksums_url": "https://install.tripleclabs.de/controller/v2.1.0/checksums.txt",
+        "deb_revision": 1,
+        "version": "2.1.0"
+      }
+    },
+    "steiger": {
+      "stable": {
+        "artifacts": {
+          "linux-amd64": {
+            "sha256": "df50bac4e4d6b30a8e2b8e45af71589f6305f675d1ecd168139b2aec5e4bfdb0",
+            "url": "https://install.tripleclabs.de/steiger/1.0.5/steiger-1.0.5-linux-amd64.tar.gz"
+          },
+          "linux-arm64": {
+            "sha256": "cfa8fc8604416a2b1b03f9f7d40a19b916f89475a3e533463f3672f6f57e3969",
+            "url": "https://install.tripleclabs.de/steiger/1.0.5/steiger-1.0.5-linux-arm64.tar.gz"
+          },
+          "windows-msi": {
+            "sha256": "43d71c8b0cdd8140ddde8f476181e49463badbf9f84c6a103a953f701008eb2a",
+            "url": "https://install.tripleclabs.de/steiger/1.0.5/SteigerAgent-1.0.5-x64.msi"
+          }
+        },
+        "base_url": "https://install.tripleclabs.de/steiger/1.0.5",
+        "checksums_url": "https://install.tripleclabs.de/steiger/1.0.5/checksums.txt",
+        "commit": "53f3354a7284ed78096d7a01cf91e0d3ce97515f",
+        "deb_revision": 1,
+        "packages": {
+          "steiger_1.0.5-1_amd64.deb": "6b76223f958e6e0c136707a3546fc06ed7c665277398a2db375264932322f8ac",
+          "steiger_1.0.5-1_arm64.deb": "2dc762e527d720c15e2e3ee25b07f37786e31fcaf4b36d84b57c441861a1c552"
+        },
+        "version": "1.0.5"
       }
     }
-  }
+  },
+  "repository": "https://install.tripleclabs.de/apt/",
+  "schema": 1,
+  "updated": "2026-10-23"
 }
