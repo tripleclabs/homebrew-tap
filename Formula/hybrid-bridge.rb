@@ -75,6 +75,6 @@ class HybridBridge < Formula
 
   test do
     assert_match version.to_s, shell_output("#{bin}/hybrid-bridge --version")
-    assert_match "Usage", shell_output("#{bin}/hybrid-bridge --help")
+    assert_match "USAGE", shell_output("#{bin}/hybrid-bridge --help")
   end
 end

@@ -22,9 +22,9 @@ class CococoCliBeta < Formula
   end
 
   def install
-    bin.install Dir["cococo-darwin-*"].fetch(0) => "cococo"
+    bin.install Dir.children(".").select { |name| File.file?(name) }.fetch(0) => "cococo"
     resource("third-party-notices").stage do
-      doc.install Dir["*.txt"].fetch(0) => "THIRD-PARTY-NOTICES.txt"
+      doc.install Dir.children(".").select { |name| File.file?(name) }.fetch(0) => "THIRD-PARTY-NOTICES.txt"
     end
   end
 

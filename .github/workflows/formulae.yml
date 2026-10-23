@@ -1,0 +1,23 @@
+name: Homebrew formulae
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-15, macos-15-intel]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: brew update
+      - run: brew tap --custom-remote tripleclabs/tap "$GITHUB_WORKSPACE"
+      - run: brew style tripleclabs/tap/cococo-cli-beta tripleclabs/tap/hybrid-bridge
+      - run: brew install tripleclabs/tap/cococo-cli-beta tripleclabs/tap/hybrid-bridge
+      - run: brew audit tripleclabs/tap/cococo-cli-beta tripleclabs/tap/hybrid-bridge
+      - run: brew test tripleclabs/tap/cococo-cli-beta tripleclabs/tap/hybrid-bridge
+      - run: bash tests/bridge-service.sh
