@@ -1,0 +1,46 @@
+class {{CLASS}} < Formula
+  desc "Command-line client for CoCoCo platform configuration ({{CHANNEL}})"
+  homepage "https://github.com/tripleclabs/iac"
+  version {{VERSION}}
+  license :cannot_represent
+
+  depends_on :macos
+
+  on_macos do
+    if Hardware::CPU.arm?
+      url {{DARWIN_ARM64_URL}}
+      sha256 {{DARWIN_ARM64_SHA}}
+    else
+      url {{DARWIN_AMD64_URL}}
+      sha256 {{DARWIN_AMD64_SHA}}
+    end
+  end
+
+  conflicts_with {{CONFLICT}}, because: "both install the cococo command"
+
+  resource "third-party-notices" do
+    url {{NOTICES_URL}}
+    sha256 {{NOTICES_SHA}}
+  end
+
+  def install
+    bin.install Dir.children(".").select { |name| File.file?(name) }.fetch(0) => "cococo"
+    resource("third-party-notices").stage do
+      doc.install Dir.children(".").select { |name| File.file?(name) }.fetch(0) => "THIRD-PARTY-NOTICES.txt"
+    end
+  end
+
+  def caveats
+    <<~EOS
+      This is the CoCoCo CLI {{CHANNEL}} channel. The installed command is cococo.
+      Run cococo --version and check which -a cococo for older manual copies.
+      Use your normal user account; installing does not sign in or change platform configuration.
+      Product use is governed by your separately supplied CoCoCo terms.
+    EOS
+  end
+
+  test do
+    assert_match version.to_s, shell_output("#{bin}/cococo --version")
+    assert_match "Usage", shell_output("#{bin}/cococo --help")
+  end
+end

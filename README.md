@@ -105,3 +105,19 @@ Keep stable Bridge and beta CLI channels distinct. Run `brew style`, `brew audit
 `brew install` and `brew test` for both formulae; test Bridge's missing-config
 refusal, local health endpoint, restart and retained data on both architectures.
 Native Intel coverage is supplied by the macOS Intel CI job when available.
+
+## Release automation
+
+Formulae are generated from the shared `linux-packages/release/catalog.json` by
+`tools/render-formulae.py`. The product release publisher updates this repository's
+`release-manifest.json` snapshot, formula versions, URLs and hashes, then commits
+and pushes them. Edit service/install behavior in `templates/*.rb.in` and regenerate.
+
+```sh
+python3 tools/render-formulae.py --manifest release-manifest.json
+python3 tools/render-formulae.py --manifest release-manifest.json --check
+```
+
+Stable and beta formulae coexist and conflict on installation because they own the
+same executable. A release must include both macOS architectures to update its
+formula. A Windows-only Bridge test release does not replace its macOS formula.

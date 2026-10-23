@@ -16,6 +16,8 @@ class HybridBridge < Formula
     end
   end
 
+  conflicts_with "hybrid-bridge-beta", because: "both install the hybrid-bridge command"
+
   def install
     bin.install Dir["hybrid-bridge-darwin-*"].fetch(0) => "hybrid-bridge"
     (libexec/"start-service").write <<~SH

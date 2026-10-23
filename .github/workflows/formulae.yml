@@ -14,10 +14,21 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4
+      - run: python3 tools/render-formulae.py --manifest release-manifest.json --check
+      - run: python3 tests/test-render.py
       - run: brew update
       - run: brew tap --custom-remote tripleclabs/tap "$GITHUB_WORKSPACE"
-      - run: brew style tripleclabs/tap/cococo-cli-beta tripleclabs/tap/hybrid-bridge
-      - run: brew install tripleclabs/tap/cococo-cli-beta tripleclabs/tap/hybrid-bridge
-      - run: brew audit tripleclabs/tap/cococo-cli-beta tripleclabs/tap/hybrid-bridge
-      - run: brew test tripleclabs/tap/cococo-cli-beta tripleclabs/tap/hybrid-bridge
+      - name: Validate every generated formula
+        shell: bash
+        run: |
+          set -euo pipefail
+          for path in Formula/*.rb; do
+            formula="tripleclabs/tap/$(basename "$path" .rb)"
+            brew style "$formula"
+            brew install "$formula"
+            brew audit "$formula"
+            brew test "$formula"
+            brew uninstall "$formula"
+          done
+      - run: brew install tripleclabs/tap/hybrid-bridge
       - run: bash tests/bridge-service.sh
