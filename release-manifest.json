@@ -82,31 +82,31 @@
       "stable": {
         "artifacts": {
           "linux-amd64": {
-            "sha256": "df50bac4e4d6b30a8e2b8e45af71589f6305f675d1ecd168139b2aec5e4bfdb0",
-            "url": "https://install.tripleclabs.de/steiger/1.0.5/steiger-1.0.5-linux-amd64.tar.gz"
+            "sha256": "99df8958016713af2942222bf57c7ecd73b1047fd739f9e042d249b5252b3e57",
+            "url": "https://install.tripleclabs.de/steiger/1.0.6/steiger-1.0.6-linux-amd64.tar.gz"
           },
           "linux-arm64": {
-            "sha256": "cfa8fc8604416a2b1b03f9f7d40a19b916f89475a3e533463f3672f6f57e3969",
-            "url": "https://install.tripleclabs.de/steiger/1.0.5/steiger-1.0.5-linux-arm64.tar.gz"
+            "sha256": "13608f6acd68b703944258317d975c8ff76ecd2b247197d5d4d82b20c9562aa4",
+            "url": "https://install.tripleclabs.de/steiger/1.0.6/steiger-1.0.6-linux-arm64.tar.gz"
           },
           "windows-msi": {
-            "sha256": "43d71c8b0cdd8140ddde8f476181e49463badbf9f84c6a103a953f701008eb2a",
-            "url": "https://install.tripleclabs.de/steiger/1.0.5/SteigerAgent-1.0.5-x64.msi"
+            "sha256": "dc2d8e00a339b6f76b1d08b573f4291f2df35332f9d8abece37d70ddb9cdacdf",
+            "url": "https://install.tripleclabs.de/steiger/1.0.6/SteigerAgent-1.0.6-x64.msi"
           }
         },
-        "base_url": "https://install.tripleclabs.de/steiger/1.0.5",
-        "checksums_url": "https://install.tripleclabs.de/steiger/1.0.5/checksums.txt",
-        "commit": "53f3354a7284ed78096d7a01cf91e0d3ce97515f",
+        "base_url": "https://install.tripleclabs.de/steiger/1.0.6",
+        "checksums_url": "https://install.tripleclabs.de/steiger/1.0.6/checksums.txt",
+        "commit": "4447a32a4a1fc7837f20b08d7e488775e69e1879",
         "deb_revision": 1,
         "packages": {
-          "steiger_1.0.5-1_amd64.deb": "6b76223f958e6e0c136707a3546fc06ed7c665277398a2db375264932322f8ac",
-          "steiger_1.0.5-1_arm64.deb": "2dc762e527d720c15e2e3ee25b07f37786e31fcaf4b36d84b57c441861a1c552"
+          "steiger_1.0.6-1_amd64.deb": "6c3a603be25de5ef66cb228cbd85f50eac5cbe267cd997d2f95c0eecf29c0c6a",
+          "steiger_1.0.6-1_arm64.deb": "a718f139baee59875439f12aeb35b02d246c58e3323452c193a5d7ad4ead874b"
         },
-        "version": "1.0.5"
+        "version": "1.0.6"
       }
     }
   },
   "repository": "https://install.tripleclabs.de/apt/",
   "schema": 1,
-  "updated": "2026-10-23"
+  "updated": "2026-10-28"
 }
