@@ -10,34 +10,34 @@
       "beta": {
         "artifacts": {
           "darwin-amd64": {
-            "sha256": "45fcb3660520d90ffba864d105edcc9fce516c071694f0ff727f78f682f771b7",
-            "url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.10/cococo-darwin-amd64"
+            "sha256": "6f3831b8261f8ad926078350768af69312c6be01ac567e91e34d72171addda26",
+            "url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.7/cococo-darwin-amd64"
           },
           "darwin-arm64": {
-            "sha256": "608e4b03c6f84fd7d6a85d5e82878f952f63b19c8786f5e40804707ef9155a0b",
-            "url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.10/cococo-darwin-arm64"
+            "sha256": "c18c9b3bb055d4dc5b80bfe4ba133e7566c7c5678171bbea0850ca31850a16fa",
+            "url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.7/cococo-darwin-arm64"
           },
           "linux-amd64": {
-            "sha256": "ce1e2972e358afc99f91f22b5751ced57438467740115268996a417961e9b72c",
-            "url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.10/cococo-linux-amd64"
+            "sha256": "d98969a0f48bb785282d36df34e98337150328e66edee5d93c2efea6fdfdc7a0",
+            "url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.7/cococo-linux-amd64"
           },
           "linux-arm64": {
-            "sha256": "60a0f280a807696094b6b57b64750d12845a4fb6d05a7c51dd71fc0fd5de2498",
-            "url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.10/cococo-linux-arm64"
+            "sha256": "7f8bd478b10c327b89f664dd3247990a06d8098c24e1b58f958274bad6ee3d6f",
+            "url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.7/cococo-linux-arm64"
           },
           "notices": {
             "sha256": "8473f80620262ccb61727bbac5bf14710f2de94a7d5838acf764c30fc461ff87",
-            "url": "https://raw.githubusercontent.com/tripleclabs/homebrew-tap/main/notices/cococo-0.1.0-beta.10.txt"
+            "url": "https://raw.githubusercontent.com/tripleclabs/homebrew-tap/main/notices/cococo-0.1.0-beta.7.txt"
           },
           "windows-msi": {
-            "sha256": "b7ec922c21a9372400a5f01118124f5a3b417e0d809a03f3fa8ed6e9111131b6",
-            "url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.10/cococo-windows-amd64.msi"
+            "sha256": "11a3f67c0c867823d40bedf19525c57d8668a2c617a59dd9c1d2ba60e8227085",
+            "url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.7/cococo-windows-amd64.msi"
           }
         },
-        "base_url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.10",
-        "checksums_url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.10/checksums.txt",
-        "deb_revision": 1,
-        "version": "0.1.0-beta.10"
+        "base_url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.7",
+        "checksums_url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.7/checksums.txt",
+        "deb_revision": 2,
+        "version": "0.1.0-beta.7"
       }
     },
     "hybrid-bridge": {
@@ -82,27 +82,27 @@
       "stable": {
         "artifacts": {
           "linux-amd64": {
-            "sha256": "99df8958016713af2942222bf57c7ecd73b1047fd739f9e042d249b5252b3e57",
-            "url": "https://install.tripleclabs.de/steiger/1.0.6/steiger-1.0.6-linux-amd64.tar.gz"
+            "sha256": "9dc2fc2a6d90b1f7a1b937956f465721051806c00bdc1f8f7ccb441387e0916b",
+            "url": "https://install.tripleclabs.de/steiger/1.1.1/steiger-1.1.1-linux-amd64.tar.gz"
           },
           "linux-arm64": {
-            "sha256": "13608f6acd68b703944258317d975c8ff76ecd2b247197d5d4d82b20c9562aa4",
-            "url": "https://install.tripleclabs.de/steiger/1.0.6/steiger-1.0.6-linux-arm64.tar.gz"
+            "sha256": "6794e9d5f48d128820c4bea5e9477f387e46605ae217e3b7f1e029e70caf2094",
+            "url": "https://install.tripleclabs.de/steiger/1.1.1/steiger-1.1.1-linux-arm64.tar.gz"
           },
           "windows-msi": {
-            "sha256": "dc2d8e00a339b6f76b1d08b573f4291f2df35332f9d8abece37d70ddb9cdacdf",
-            "url": "https://install.tripleclabs.de/steiger/1.0.6/SteigerAgent-1.0.6-x64.msi"
+            "sha256": "3d30c26dc184555e54d3dc85b07a67b43956ac37e81ceb674aadbbd6bb003969",
+            "url": "https://install.tripleclabs.de/steiger/1.1.1/SteigerAgent-1.1.1-x64.msi"
           }
         },
-        "base_url": "https://install.tripleclabs.de/steiger/1.0.6",
-        "checksums_url": "https://install.tripleclabs.de/steiger/1.0.6/checksums.txt",
-        "commit": "4447a32a4a1fc7837f20b08d7e488775e69e1879",
+        "base_url": "https://install.tripleclabs.de/steiger/1.1.1",
+        "checksums_url": "https://install.tripleclabs.de/steiger/1.1.1/checksums.txt",
+        "commit": "9f7415d5b26d7698ae8d8610bd30173fc072bb90",
         "deb_revision": 1,
         "packages": {
-          "steiger_1.0.6-1_amd64.deb": "6c3a603be25de5ef66cb228cbd85f50eac5cbe267cd997d2f95c0eecf29c0c6a",
-          "steiger_1.0.6-1_arm64.deb": "a718f139baee59875439f12aeb35b02d246c58e3323452c193a5d7ad4ead874b"
+          "steiger_1.1.1-1_amd64.deb": "d5a9f8816950f406c944db336ef4d50bda987cd2a1aa82348012042dfe1cdc7f",
+          "steiger_1.1.1-1_arm64.deb": "28fd39cd5c2f176f6769d92d7158590580f6652e390ccc873c1bd99f431d2910"
         },
-        "version": "1.0.6"
+        "version": "1.1.1"
       }
     }
   },
