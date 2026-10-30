@@ -11,7 +11,7 @@ brew install tripleclabs/tap/cococo-cli-beta
 brew install tripleclabs/tap/hybrid-bridge
 ```
 
-Install only the products you need. CoCoCo CLI beta 0.1.0-beta.7 provides the
+Install only the products you need. CoCoCo CLI beta 0.1.0-beta.9 provides the
 `cococo` command. Hybrid Bridge is 2.1.0. Downloads use the published macOS
 binaries with pinned SHA-256 checksums. The CLI's beta name is intentional;
 it does not imply a stable CLI release. Product use remains subject to the
