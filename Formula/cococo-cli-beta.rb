@@ -1,23 +1,23 @@
 class CococoCliBeta < Formula
   desc "Command-line client for CoCoCo platform configuration (beta)"
   homepage "https://github.com/tripleclabs/iac"
-  version "0.1.0-beta.9"
+  version "0.1.0-beta.10"
   license :cannot_represent
 
   depends_on :macos
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.9/cococo-darwin-arm64"
-      sha256 "274a4c47006dcb9cdf5f1530a15999e1a65501a007da10c07aa31a3cfcfb0592"
+      url "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.10/cococo-darwin-arm64"
+      sha256 "608e4b03c6f84fd7d6a85d5e82878f952f63b19c8786f5e40804707ef9155a0b"
     else
-      url "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.9/cococo-darwin-amd64"
-      sha256 "b84b3380e23113f734337f45d3a46470bf63de720b0b9186356a8297684933ed"
+      url "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.10/cococo-darwin-amd64"
+      sha256 "45fcb3660520d90ffba864d105edcc9fce516c071694f0ff727f78f682f771b7"
     end
   end
 
   resource "third-party-notices" do
-    url "https://raw.githubusercontent.com/tripleclabs/homebrew-tap/main/notices/cococo-0.1.0-beta.9.txt"
+    url "https://raw.githubusercontent.com/tripleclabs/homebrew-tap/main/notices/cococo-0.1.0-beta.10.txt"
     sha256 "8473f80620262ccb61727bbac5bf14710f2de94a7d5838acf764c30fc461ff87"
   end
 

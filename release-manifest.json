@@ -10,34 +10,34 @@
       "beta": {
         "artifacts": {
           "darwin-amd64": {
-            "sha256": "b84b3380e23113f734337f45d3a46470bf63de720b0b9186356a8297684933ed",
-            "url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.9/cococo-darwin-amd64"
+            "sha256": "45fcb3660520d90ffba864d105edcc9fce516c071694f0ff727f78f682f771b7",
+            "url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.10/cococo-darwin-amd64"
           },
           "darwin-arm64": {
-            "sha256": "274a4c47006dcb9cdf5f1530a15999e1a65501a007da10c07aa31a3cfcfb0592",
-            "url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.9/cococo-darwin-arm64"
+            "sha256": "608e4b03c6f84fd7d6a85d5e82878f952f63b19c8786f5e40804707ef9155a0b",
+            "url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.10/cococo-darwin-arm64"
           },
           "linux-amd64": {
-            "sha256": "bb296d2ee7f949a96669f1dbbe57f054ddf88330aa935cb8baba9957727fcd71",
-            "url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.9/cococo-linux-amd64"
+            "sha256": "ce1e2972e358afc99f91f22b5751ced57438467740115268996a417961e9b72c",
+            "url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.10/cococo-linux-amd64"
           },
           "linux-arm64": {
-            "sha256": "51437d24f97a624e41468d89c784df9928b3333e7ace0d485e94a84063a46ec2",
-            "url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.9/cococo-linux-arm64"
+            "sha256": "60a0f280a807696094b6b57b64750d12845a4fb6d05a7c51dd71fc0fd5de2498",
+            "url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.10/cococo-linux-arm64"
           },
           "notices": {
             "sha256": "8473f80620262ccb61727bbac5bf14710f2de94a7d5838acf764c30fc461ff87",
-            "url": "https://raw.githubusercontent.com/tripleclabs/homebrew-tap/main/notices/cococo-0.1.0-beta.9.txt"
+            "url": "https://raw.githubusercontent.com/tripleclabs/homebrew-tap/main/notices/cococo-0.1.0-beta.10.txt"
           },
           "windows-msi": {
-            "sha256": "0da7ca7c9f4a8e2b739a97198cf9fce0111fcadc6df214018f6b3ddcd21ee638",
-            "url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.9/cococo-windows-amd64.msi"
+            "sha256": "b7ec922c21a9372400a5f01118124f5a3b417e0d809a03f3fa8ed6e9111131b6",
+            "url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.10/cococo-windows-amd64.msi"
           }
         },
-        "base_url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.9",
-        "checksums_url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.9/checksums.txt",
+        "base_url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.10",
+        "checksums_url": "https://install.tripleclabs.de/cococo/beta/v0.1.0-beta.10/checksums.txt",
         "deb_revision": 1,
-        "version": "0.1.0-beta.9"
+        "version": "0.1.0-beta.10"
       }
     },
     "hybrid-bridge": {
