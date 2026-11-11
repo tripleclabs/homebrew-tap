@@ -87,27 +87,27 @@
       "stable": {
         "artifacts": {
           "linux-amd64": {
-            "sha256": "f4aff5784ecedd0db7254732b0fa6d44e4b33f3854f7f12f797148368f3cb9b3",
-            "url": "https://install.tripleclabs.de/steiger/1.2.2/steiger-1.2.2-linux-amd64.tar.gz"
+            "sha256": "4911bd2f2eb2904a9c3a325a487edf63cfd31aa088caa4f2e2d6f02bcb1732f2",
+            "url": "https://install.tripleclabs.de/steiger/1.2.3/steiger-1.2.3-linux-amd64.tar.gz"
           },
           "linux-arm64": {
-            "sha256": "1519c3bbdd485ffcb9f2299d76727f811eafb70bca40c42be6e7faeaccfe49e2",
-            "url": "https://install.tripleclabs.de/steiger/1.2.2/steiger-1.2.2-linux-arm64.tar.gz"
+            "sha256": "e5abf188ca33371a9fe4d445ea45e69cd98be52bce2b2572b24411e8f2023f3f",
+            "url": "https://install.tripleclabs.de/steiger/1.2.3/steiger-1.2.3-linux-arm64.tar.gz"
           },
           "windows-msi": {
-            "sha256": "05df9ca07c466ff9fed971bff4a5e3d41c07a126e8de110c6a4d7d205bbcb112",
-            "url": "https://install.tripleclabs.de/steiger/1.2.2/SteigerAgent-1.2.2-x64.msi"
+            "sha256": "dfbe3fa5a03f5326a6bfc103a96832e1140bdc8041808bbdc9fdb1c8c869018d",
+            "url": "https://install.tripleclabs.de/steiger/1.2.3/SteigerAgent-1.2.3-x64.msi"
           }
         },
-        "base_url": "https://install.tripleclabs.de/steiger/1.2.2",
-        "checksums_url": "https://install.tripleclabs.de/steiger/1.2.2/checksums.txt",
-        "commit": "91dc4ced243ccccaaf82fdea840caf206e92ace4",
+        "base_url": "https://install.tripleclabs.de/steiger/1.2.3",
+        "checksums_url": "https://install.tripleclabs.de/steiger/1.2.3/checksums.txt",
+        "commit": "11e79a16638a1851c280c6ae1ddb723e92afeab1",
         "deb_revision": 1,
         "packages": {
-          "steiger_1.2.2-1_amd64.deb": "a5a85ba984d10fd5ef29dae928e9db38b285a4cd04d2dbd47e0ed1a8c7036b75",
-          "steiger_1.2.2-1_arm64.deb": "678d01be795ca8da545bf4d10015e73372caab92d278c333c1ce42dacf7709fa"
+          "steiger_1.2.3-1_amd64.deb": "db088fbb1ea49fccb32f26cb1496902d5c1d99d26d2676ee7891e8f3e53c52bf",
+          "steiger_1.2.3-1_arm64.deb": "a8fe0e7688b1c120cddeaddb74716d90067bc7a1e59f097bdf128344d9304103"
         },
-        "version": "1.2.2"
+        "version": "1.2.3"
       }
     }
   },
