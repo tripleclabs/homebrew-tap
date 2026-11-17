@@ -2,7 +2,7 @@
   "guide": {
     "cococo-cli": "beta",
     "hybrid-bridge": "stable",
-    "hybrid-bridge-windows": "beta",
+    "hybrid-bridge-windows": "stable",
     "steiger": "stable"
   },
   "products": {
@@ -61,26 +61,35 @@
       "stable": {
         "artifacts": {
           "darwin-amd64": {
-            "sha256": "17450c5f0bbf798d6799c8c66284f389fcd33f69f48ca349dd081e27858a86fd",
-            "url": "https://install.tripleclabs.de/controller/v2.1.0/hybrid-bridge-darwin-amd64"
+            "sha256": "5f918c53d5cb34239aec35dc4364f14f90fa9d5ba9e9e1d4d9a2032f859330cf",
+            "url": "https://install.tripleclabs.de/controller/v2.2.0/hybrid-bridge-darwin-amd64"
           },
           "darwin-arm64": {
-            "sha256": "de5018f0a6f8132016f69c72a13a362c07eba910e103c8bef116708f1506e872",
-            "url": "https://install.tripleclabs.de/controller/v2.1.0/hybrid-bridge-darwin-arm64"
+            "sha256": "64017f9ade30c0d2c447a494171b3a84692ca6407d5de14de827f01de48ff271",
+            "url": "https://install.tripleclabs.de/controller/v2.2.0/hybrid-bridge-darwin-arm64"
           },
           "linux-amd64": {
-            "sha256": "19b59b37b4c7d44b1ab7516ca2a5fe6aa51cade02a2d60f41b07294c2e7b8e5f",
-            "url": "https://install.tripleclabs.de/controller/v2.1.0/hybrid-bridge-linux-amd64"
+            "sha256": "c76b3a590c9e73b4f5cb2b39eebe3a9bc80c972dd08517e1a1b57813d30a4116",
+            "url": "https://install.tripleclabs.de/controller/v2.2.0/hybrid-bridge-linux-amd64"
           },
           "linux-arm64": {
-            "sha256": "4d943eb29e23c1b72554f4009b34f1f79acabf3d45ed1565aa0a8a444bf3c4af",
-            "url": "https://install.tripleclabs.de/controller/v2.1.0/hybrid-bridge-linux-arm64"
+            "sha256": "f470949f03b35e362f001e9d3ae73aca98c47091ff395d8293189e50d8031b20",
+            "url": "https://install.tripleclabs.de/controller/v2.2.0/hybrid-bridge-linux-arm64"
+          },
+          "windows-msi": {
+            "sha256": "09c343374c3f68f8adc833d55767add6f3b6953c9eb7317a9a7ae8aba9a0b02b",
+            "url": "https://install.tripleclabs.de/controller/v2.2.0/HybridBridge-2.2.0-x64.msi"
           }
         },
-        "base_url": "https://install.tripleclabs.de/controller/v2.1.0",
-        "checksums_url": "https://install.tripleclabs.de/controller/v2.1.0/checksums.txt",
+        "base_url": "https://install.tripleclabs.de/controller/v2.2.0",
+        "checksums_url": "https://install.tripleclabs.de/controller/v2.2.0/checksums.txt",
+        "commit": "b3e2236f0ccff9f82ceeb39597c35b22c3f650fb",
         "deb_revision": 1,
-        "version": "2.1.0"
+        "packages": {
+          "hybrid-bridge_2.2.0-1_amd64.deb": "93fcc41491cda09d9fa6abd04160a10c591d2e208628386ed0c4e1a14ce53bce",
+          "hybrid-bridge_2.2.0-1_arm64.deb": "58ce69f4e0ef0fb11f0d10af42ae947e548f1f4e10194e71f9a0d836ce4b4ec6"
+        },
+        "version": "2.2.0"
       }
     },
     "steiger": {
@@ -113,5 +122,5 @@
   },
   "repository": "https://install.tripleclabs.de/apt/",
   "schema": 1,
-  "updated": "2026-11-12"
+  "updated": "2026-11-17"
 }
