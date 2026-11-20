@@ -1,18 +1,18 @@
 class HybridBridge < Formula
   desc "CoCoCo on-premise integration bridge"
   homepage "https://github.com/tripleclabs/hybrid-bridge"
-  version "2.2.0"
+  version "2.3.0"
   license :cannot_represent
 
   depends_on :macos
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://install.tripleclabs.de/controller/v2.2.0/hybrid-bridge-darwin-arm64"
-      sha256 "64017f9ade30c0d2c447a494171b3a84692ca6407d5de14de827f01de48ff271"
+      url "https://install.tripleclabs.de/controller/v2.3.0/hybrid-bridge-darwin-arm64"
+      sha256 "134cb8c0f145020802671a8093ce6758aec6257520d841f295c6406d40eb9f91"
     else
-      url "https://install.tripleclabs.de/controller/v2.2.0/hybrid-bridge-darwin-amd64"
-      sha256 "5f918c53d5cb34239aec35dc4364f14f90fa9d5ba9e9e1d4d9a2032f859330cf"
+      url "https://install.tripleclabs.de/controller/v2.3.0/hybrid-bridge-darwin-amd64"
+      sha256 "753c2975db0575a7d7f911bf15f04ceb8bb7f21710a79024f73423131ed91dcf"
     end
   end
 
